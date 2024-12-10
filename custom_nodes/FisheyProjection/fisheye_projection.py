@@ -85,8 +85,9 @@ class FisheyeProjection:
         return []
 
     def go(self, image):
+        #image is Batch x Height x Width x Channels
         #do some processing on the image, in this example I just invert it
-        print(f"image {image}")
+        print(f"image {image.shape}")
         return (image,)
 
     """
